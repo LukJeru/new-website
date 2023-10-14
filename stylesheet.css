@@ -1,8 +1,8 @@
 body {
-  background-color: var(--red);
+  background-color: var(--white);
   font-size: 16px;
   font-family: "Tajawal";
-  color: var(--white);
+  color: var(--blue);
   width: 100%;
 }
 
@@ -34,7 +34,7 @@ nav {
 
 nav h1 {
   font-size: 2rem;
-  color: var(--white)
+  color: var(--blue)
 }
 
 header ul {
@@ -45,15 +45,6 @@ header ul {
   font-size: 1.5rem;
 }
 
-bold {
-  color: var(--majorelle)
-}
-
-header ul li:hover {
-  background-color: var(--yellow);
-  color: var(--blue)
-}
-
 header ul li {
   border: 2px none;
   width: 3rem;
@@ -61,7 +52,23 @@ header ul li {
   font-size: 1rem;
   padding: 1rem;
   border-radius: 50%;
+}
+
+#about-link {
+  background-color: var(--yellow);
+}
+
+#portfolio-link {
+  background-color: var(--red);
+}
+
+#contact-link {
+  background-color: var(--majorelle);
+}
+
+#about-link:hover, #portfolio-link:hover, #contact-link:hover {
   background-color: var(--blue);
+  color: var(--blue)
 }
 
 header ul li a {
