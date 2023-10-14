@@ -1,5 +1,5 @@
 body {
-  background-color: var(--blue);
+  background-color: var(--red);
   font-size: 16px;
   font-family: "Tajawal";
   color: var(--white);
@@ -19,8 +19,9 @@ body {
 
 header {
   width: 100%;
-  background-color: var(--white);
   height: 5rem;
+  position: fixed;
+  z-index: 1;
 }
 
 nav {
@@ -32,7 +33,8 @@ nav {
 }
 
 nav h1 {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  color: var(--white)
 }
 
 header ul {
@@ -44,24 +46,64 @@ header ul {
 }
 
 header ul li:hover {
-  color: var(--yellow)
+  background-color: var(--yellow);
+  color: var(--blue)
+}
+
+header ul li {
+  border: 2px none;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: var(--blue);
+}
+
+header ul li a {
+  text-decoration: none;
+  color: var(--white);
 }
 
 main{
   display: flex;
-  height: 40rem;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#About{
+  position: relative;
+  top: 5rem;
+}
+
+#Portfolio{
+  position: relative;
+  top:25rem;
+  left: 20rem;
+}
+
+#Contact{
+  position: relative;
+  top: 30rem;
 }
 
 img {
-  width: 30%;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
   position: absolute;
   top: 12rem;
   left: 50rem;
 
 }
 
+img:hover{
+  color: var(--yellow);
+}
+
 footer {
   width: 100%;
-  background-color: var(--white);
   height: 5rem;
 }
