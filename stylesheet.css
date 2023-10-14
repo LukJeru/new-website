@@ -1,3 +1,67 @@
 body {
-  color: red;
+  background-color: var(--blue);
+  font-size: 16px;
+  font-family: "Tajawal";
+  color: var(--white);
+  width: 100%;
+}
+
+
+
+/*colors*/
+:root {
+  --blue: #00158c;
+  --yellow: #d6c627;
+  --red: #a3464a;
+  --white: #ffffff;
+  --majorelle:#6050DC;
+}
+
+header {
+  width: 100%;
+  background-color: var(--white);
+  height: 5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin: 0 2rem;
+  color: var(--blue);
+}
+
+nav h1 {
+  font-size: 1.8rem;
+}
+
+header ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+
+header ul li:hover {
+  color: var(--yellow)
+}
+
+main{
+  display: flex;
+  height: 40rem;
+}
+
+img {
+  width: 30%;
+  position: absolute;
+  top: 12rem;
+  left: 50rem;
+
+}
+
+footer {
+  width: 100%;
+  background-color: var(--white);
+  height: 5rem;
 }
