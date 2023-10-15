@@ -1,5 +1,5 @@
 body {
-  background-color: var(--white);
+  background-image: url(images/cross-2133799_1920.jpg);
   font-size: 16px;
   font-family: "Tajawal";
   color: var(--blue);
@@ -8,13 +8,16 @@ body {
 
 
 
+
+
 /*colors*/
 :root {
-  --blue: #00158c;
-  --yellow: #d6c627;
-  --red: #a3464a;
-  --white: #f0f8ff;
-  --majorelle:#6050DC;
+  --blue: #C9DDFF;
+  --yellow: #ECB0E1;
+  --red: #DE6C83;
+  --white: #C1AAC0;
+  --majorelle: #2CF6B3;
+  --tannengrün: #202c26;
 }
 
 header {
@@ -55,20 +58,35 @@ header ul li {
 }
 
 #about-link {
-  background-color: var(--yellow);
+  background-color: var(--blue);
 }
 
+#about-link a {
+  color: var(--red);
+  font-weight: 700;
+}
 #portfolio-link {
-  background-color: var(--red);
+  background-color: var(--blue);
+}
+
+#portfolio-link a{
+  color: var(--red);
+  font-weight: 700;
 }
 
 #contact-link {
-  background-color: var(--majorelle);
+  background-color: var(--blue);
+}
+
+#contact-link a{
+  color: var(--red);
+  font-weight: 700;
 }
 
 #about-link:hover, #portfolio-link:hover, #contact-link:hover {
-  background-color: var(--blue);
-  color: var(--blue)
+  background-image: none;
+  background-color: var(--majorelle);
+  color: var(--white)
 }
 
 header ul li a {
@@ -103,19 +121,18 @@ main{
   top: 80rem;
 }
 
-img {
-  width: 20rem;
-  height: 20rem;
-  border-radius: 50%;
-  position: absolute;
-  top: 12rem;
-  left: 50rem;
-
-}
-
 
 img:hover{
   color: var(--yellow);
+}
+
+#ProfilePicture {
+  position: absolute;
+  left: 53rem;
+  top: 15rem;
+  height: 25rem;
+  width: 25rem;
+  border-radius: 50%;
 }
 
 footer {
